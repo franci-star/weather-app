@@ -16,7 +16,7 @@ const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "
 let day = new Date();
 
 async function firstplace(place) {
-    const apiresponse_firstplace = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&${userid}`);
+    const apiresponse_firstplace = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&${userid}`);
     const firstplace_position = await apiresponse_firstplace.json();
     return firstplace_position.coord;
 }

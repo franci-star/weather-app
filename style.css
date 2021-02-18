@@ -13,6 +13,7 @@ body {
 }
 
 .large_title {
+    width: 100%;
     font-size: 25px;
     text-align: left;
     letter-spacing: 2.5px;
