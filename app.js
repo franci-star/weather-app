@@ -120,6 +120,9 @@ function today(
     j_wind_arrow.style.transform = `rotate(${arrow}deg)`;
     let j_details_wind_name = document.getElementById("details_wind_name");
     switch (true) {
+        case (arrow === 0):
+            j_details_wind_name.innerHTML = "NORTH";
+            break;
         case (arrow > 0) && (arrow < 90):
             j_details_wind_name.innerHTML = "NORTH-EAST";
             break;
