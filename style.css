@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "xApp";
+    src: url("./font/OpenSansCondensed-Light.ttf") format("truetype");
+}
+
+body {
+    padding: 50px;
+    background-color: #0f3057;
+    text-align: center;
+    color: #a3e0f7;
+    font-size: 25px;
+    font-family: xApp;
+}
+
+.large_title {
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 2.5px;
+}
+
+strong {
+    color: #ffec65;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+#main_left {
+    height: auto;
+    margin-top: 50px;
+    background-color: #00587a;
+    display: flex;
+    justify-content: center;
+}
+
+#last_left {
+    display: none;
+    padding: 20px;
+    background-color: #00587a;
+}
+
+.left_container {
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_container.space {
+    justify-content: space-between;
+}
+
+.left_container.start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form-control {
+    background-color: #ffec65;
+    font-size: 25px;
+    font-family: xApp;
+}
+
+.form-control:focus {
+    background-color: #ffec65;
+    color: #00587a;
+    font-size: 25px;
+    font-family: xApp;
+}
+
+.today_date_day {
+    color: #ffec65;
+}
+
+.today_date_number {
+    font-size: 50px;
+    color: #ffec65;
+}
+
+.image {
+    height: 100%;
+    background-image: url("./icone-terzo-esercizio/cloud-background.png");
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #00587a;
+    opacity: 0.8;
+}
+
+.today_image {
+    position: absolute;
+}
+
+.today_weather {
+    text-transform: uppercase;
+    text-decoration: underline 5px dotted #ffec65;
+}
+
+.today_temperature {
+    font-size: 50px;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location_name {
+    font-size: 50px;
+    color: #ffec65;
+}
+
+.btn.btn-primary {
+    width: fit-content;
+    margin: 25px;
+    background-color: #a3e0f7;
+    font-size: 25px;
+    color: #00587a;
+    border-radius: 15px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #ffec65 !important;
+    color: #00587a !important;
+}
+
+.btn.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#next_days {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#next_days:first-child {
+    margin-left: 50px;
+}
+
+.day {
+    margin-bottom: 25px;
+    height: 250px;
+    width: 180px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #00587a;
+}
+
+.day_name {
+    color: #ffec65;
+}
+
+.day_image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day_image img {
+    height: 100px;
+}
+
+.day_temperatures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.small_title {
+    margin: 100px 0 25px 50px;
+    font-size: 50px;
+    text-align: left;
+    color: #ffec65;
+}
+
+.first_row {
+    margin-left: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_row {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    width: 445px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00587a;
+}
+
+.details_name {
+    color: #ffec65;
+}
+
+.details_value {
+    font-size: 50px;
+}
+
+.details_wind {
+    display: flex;
+    justify-content: center;
+}
+
+#wind_arrow {
+    height: 25px;
+    fill: #ffec65;
+}
+
+#details_wind_name {
+    margin-left: 5px;
+}
+
+.out {
+    height: 25px;
+    padding: 2.5px;
+    display: flex;
+    align-items: center;
+    background-color: #a3e0f7;
+    border-radius: 25px;
+}
+
+#in {
+    height: 100%;
+    width: 64%;
+    background-color: #ffec65;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.full_in {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 991px) {
+    #main_left {
+        height: 800px;
+    }
+
+    #next_days {
+        justify-content: center;
+    }
+
+    #next_days:first-child {
+        margin-left: 0;
+    }
+
+    .day {
+        height: 300px;
+        width: 230px;
+        margin: 25px
+    }
+
+    .small_title {
+        margin-left: 0;
+    }
+
+    .first_row {
+        margin-left: 0;
+    }
+
+    .second_row {
+    margin-left: 0;
+    }
+
+    .details.wind {
+        margin-right: 50px;
+    }
+
+    .details.visibility {
+        margin-right: 50px;
+    }
+}
